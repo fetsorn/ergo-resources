@@ -1,11 +1,11 @@
 #+TITLE: Scala Ergo Starter
 
 * links
-discord https://discord.gg/4npTQFTa
-scala/ergoscript playground
-https://scastie.scala-lang.org
-ergo explorer
-https://explorer.ergoplatform.com
+- discord https://discord.gg/4npTQFTa
+- scala/ergoscript playground
+- https://scastie.scala-lang.org
+- ergo explorer
+- https://explorer.ergoplatform.com
 
 * short intro
 https://discord.com/channels/668903786361651200/840313005064585246/851866975675351091
