@@ -47,80 +47,80 @@ Common Data types used
 #+end_quote
 
 * setup scala
-https://www.scala-sbt.org/
-https://github.com/dwijnand/sbt-extras
-https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html
-https://scala-lang.org/download/scala3.html
+- https://www.scala-sbt.org/
+- https://github.com/dwijnand/sbt-extras
+- https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html
+- https://scala-lang.org/download/scala3.html
 
 * ergo whitepapers
-main
-https://ergoplatform.org/docs/whitepaper.pdf
-ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proof
-https://ergoplatform.org/docs/ErgoScript.pdf
-Advanced ErgoScript Tutorial
-https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf
-ErgoTree Specification for Ergo Protocol 1.0
-https://ergoplatform.org/docs/ErgoTree.pdf
-SigmaUSD Contracts Standard
-https://github.com/ergoplatform/eips/blob/eip15/eip-0015.md
-ErgoScript Language Description
-https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/docs/LangSpec.md
-EIP-0014: Decentralized Exchange Contracts #27
-https://github.com/ergoplatform/eips/pull/27
+- main
+- https://ergoplatform.org/docs/whitepaper.pdf
+- ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proof
+- https://ergoplatform.org/docs/ErgoScript.pdf
+- Advanced ErgoScript Tutorial
+- https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf
+- ErgoTree Specification for Ergo Protocol 1.0
+- https://ergoplatform.org/docs/ErgoTree.pdf
+- SigmaUSD Contracts Standard
+- https://github.com/ergoplatform/eips/blob/eip15/eip-0015.md
+- ErgoScript Language Description
+- https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/docs/LangSpec.md
+- EIP-0014: Decentralized Exchange Contracts #27
+- https://github.com/ergoplatform/eips/pull/27
 
 * tutorials
-AppKit by Example - video https://www.youtube.com/watch?v=Md5s-XV6-Hs&t=9s
-setup a full node - https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
-Tutorial 1 with Robert Kornacki: https://www.youtube.com/watch?v=8l2v1asHgyA
-Tutorial 2 with Alex Chepurnoy: https://www.youtube.com/watch?v=Wn_w9F_MX8w
+- AppKit by Example - video https://www.youtube.com/watch?v=Md5s-XV6-Hs&t=9s
+- setup a full node - https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+- Tutorial 1 with Robert Kornacki: https://www.youtube.com/watch?v=8l2v1asHgyA
+- Tutorial 2 with Alex Chepurnoy: https://www.youtube.com/watch?v=Wn_w9F_MX8w
 
 * ergo blogs
-ergo addresses
-https://ergoplatform.org/en/blog/2019_07_24_ergo_address/
-blog on devtools
-https://ergoplatform.org/en/blog/2021-06-10-building-ergo-developer-tools/
-weekly news
-https://curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-september-29th-44baf7302fd8
-how ageUSD/sigmaUSD https://sigmausd.io/#/ works
-https://ergoplatform.org/en/blog/2021-02-05-building-ergo-how-the-ageusd-stablecoin-works/
-How to set up and configure a full Ergo node (2019)
-https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/
+- ergo addresses
+- https://ergoplatform.org/en/blog/2019_07_24_ergo_address/
+- blog on devtools
+- https://ergoplatform.org/en/blog/2021-06-10-building-ergo-developer-tools/
+- weekly news
+- https://curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-september-29th-44baf7302fd8
+- how ageUSD/sigmaUSD https://sigmausd.io/#/ works
+- https://ergoplatform.org/en/blog/2021-02-05-building-ergo-how-the-ageusd-stablecoin-works/
+- How to set up and configure a full Ergo node (2019)
+- https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/
 
 * resources
-https://ergohack.io/resources/
-https://github.com/ergoplatform/awesome-ergo
-https://github.com/ergoplatform/ergo/wiki
-https://ergonaut.space/en/Developers
-https://ergonaut.space/en/sigma-protocols
+ - https://ergohack.io/resources/
+ - https://github.com/ergoplatform/awesome-ergo
+ - https://github.com/ergoplatform/ergo/wiki
+ - https://ergonaut.space/en/Developers
+ - https://ergonaut.space/en/sigma-protocols
 
 * repos
-ergo
-https://github.com/ergoplatform/ergo
-ergoscript code to read
-https://github.com/ergoplatform/ergoscript-by-example
-ergo-appkit
-https://github.com/ergoplatform/ergo-appkit#using-from-java
-ergo-appkit-examples
-https://github.com/aslesarenko/ergo-appkit-examples
-raffle
-https://github.com/NazeriMahdi2001/Raffle-Doc/blob/master/Contracts/ContractTest.scala
-ergo-mixer
-https://github.com/ergoMixer/ergoMixBack
-ergo-hdf
-https://github.com/ergoplatform/ergo-headless-dapp-framework
-erg-sdk-js
-https://github.com/ergolabs/ergo-sdk-js
-sigma-rust
-https://github.com/ergoplatform/sigma-rust
-NFT Auction House:
-https://github.com/anon-real/ErgoAuctionHouse
-SigmaUSD:
-https://github.com/anon-real/sigma-usd
-Ergo Assembler:
-https://github.com/anon-real/ergo-assembler
-
-old repos:
-docker+nix to run ergo node, deprecated
-https://github.com/ergoplatform/ergo-bootstrap
-nix to run ergo, deprecated
-https://github.com/ergoplatform/ergo-nix
+- ergo
+- https://github.com/ergoplatform/ergo
+- ergoscript code to read
+- https://github.com/ergoplatform/ergoscript-by-example
+- ergo-appkit
+- https://github.com/ergoplatform/ergo-appkit#using-from-java
+- ergo-appkit-examples
+- https://github.com/aslesarenko/ergo-appkit-examples
+- raffle
+- https://github.com/NazeriMahdi2001/Raffle-Doc/blob/master/Contracts/ContractTest.scala
+- ergo-mixer
+- https://github.com/ergoMixer/ergoMixBack
+- ergo-hdf
+- https://github.com/ergoplatform/ergo-headless-dapp-framework
+- erg-sdk-js
+- https://github.com/ergolabs/ergo-sdk-js
+- sigma-rust
+- https://github.com/ergoplatform/sigma-rust
+- NFT Auction House:
+- https://github.com/anon-real/ErgoAuctionHouse
+- SigmaUSD:
+- https://github.com/anon-real/sigma-usd
+- Ergo Assembler:
+- https://github.com/anon-real/ergo-assembler
+-
+- old repos:
+- docker+nix to run ergo node, deprecated
+- https://github.com/ergoplatform/ergo-bootstrap
+- nix to run ergo, deprecated
+- https://github.com/ergoplatform/ergo-nix
