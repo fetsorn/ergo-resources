@@ -1,0 +1,126 @@
+#+TITLE: Scala Ergo Starter
+
+* links
+discord https://discord.gg/4npTQFTa
+scala/ergoscript playground
+https://scastie.scala-lang.org
+ergo explorer
+https://explorer.ergoplatform.com
+
+* short intro
+https://discord.com/channels/668903786361651200/840313005064585246/851866975675351091
+#+begin_quote
+Its important to understand what a UTXO is before starting on Ergo. Please have a look at other resources. Here is a brief bullet-list explaining Ergo for newcomers, and specifically those from Ethereum
+======================
+What is Ergo and how is it different from Ethereum?
+
+1. Ergo is UTXO based, while Ethereum is Account based.
+2. Ergo UTXO is called a "box".
+3. A "box" has 10 registers R0-R9, which can store data types described below.
+4. Out of the 10 registers, R0-R3 are reserved for protocol use.
+    R0 has monetary value in nano-Ergs (1 Erg = 1000000000 nanoErgs)
+    R1 has guard script (similar to bitcoin's scriptPubKey).
+    R2 has assets (tokens). Tokens are similar to eth tokens (details below).
+    R3 has creation info, which we will not discuss here (used for advanced applications).
+5. R4-R9 are for use in dApps (smart contracts).
+6. Guard script is also called Smart contract.
+7. An Ergo address is simply the value in R1 encoded as Base58 (with some details skipped).
+   Thus, even if other registers have different values, two boxes will have the same address if R1 is identical.
+8. Guard scripts are written in a language called ErgoScript.
+9. Deploying a smart conrtract in Ergo involves creating a box with R1 having the code.
+10. Each box is uniquely identified by box Id, which is derived from (tx, index) pair as in Bitcoin.
+    Like in Bitcoin, an Ergo Tx consumes (destroys) unspent boxes and creates new ones.
+    All dApps of Ergo use only unspent boxes. Ergo contracts cannot access spent boxes.
+11. We can emulate long-lived boxes by creating new box with same script. Only box id will be different.
+12. An Ergo smart contract can be executed only by spending the box containing it
+13. Since multiple boxes share the same address if the script is the same, we can use the
+    other registers to differentiate between such boxes. One most common approach is to use NFT (from R2)
+14. Each Ergo tx can issue at most one token (asset) in arbitrary quantity. The only rule is that
+    the token id will be the box id of the first input of the tx.
+15. A token issued in quantity 1 is called an NFT. We can use this to identify boxes.
+16. An Ergo tx must conserve nano-Ergs (cannot destroy nano-Ergs). Unlike Bitcoin, there is a separate box for paying mining fee.
+    Tokens can be destroyed in a tx.
+Common Data types used
+1. Int, Long, BigInt (256-bit signed integer),
+2. GroupElement .. same as Bitcoin's curve point
+3. Coll[Byte] a collection of bytes, like Array[Byte] of Scala
+#+end_quote
+
+* setup scala
+https://www.scala-sbt.org/
+https://github.com/dwijnand/sbt-extras
+https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html
+https://scala-lang.org/download/scala3.html
+
+* ergo whitepapers
+main
+https://ergoplatform.org/docs/whitepaper.pdf
+ErgoScript, a Cryptocurrency Scripting Language Supporting Noninteractive Zero-Knowledge Proof
+https://ergoplatform.org/docs/ErgoScript.pdf
+Advanced ErgoScript Tutorial
+https://ergoplatform.org/docs/AdvancedErgoScriptTutorial.pdf
+ErgoTree Specification for Ergo Protocol 1.0
+https://ergoplatform.org/docs/ErgoTree.pdf
+SigmaUSD Contracts Standard
+https://github.com/ergoplatform/eips/blob/eip15/eip-0015.md
+ErgoScript Language Description
+https://github.com/ScorexFoundation/sigmastate-interpreter/blob/develop/docs/LangSpec.md
+EIP-0014: Decentralized Exchange Contracts #27
+https://github.com/ergoplatform/eips/pull/27
+
+* tutorials
+AppKit by Example - video https://www.youtube.com/watch?v=Md5s-XV6-Hs&t=9s
+setup a full node - https://github.com/ergoplatform/ergo/wiki/Set-up-a-full-node
+Tutorial 1 with Robert Kornacki: https://www.youtube.com/watch?v=8l2v1asHgyA
+Tutorial 2 with Alex Chepurnoy: https://www.youtube.com/watch?v=Wn_w9F_MX8w
+
+* ergo blogs
+ergo addresses
+https://ergoplatform.org/en/blog/2019_07_24_ergo_address/
+blog on devtools
+https://ergoplatform.org/en/blog/2021-06-10-building-ergo-developer-tools/
+weekly news
+https://curiaregiscrypto.medium.com/whats-going-on-behind-the-screens-ergo-weekly-dev-update-september-29th-44baf7302fd8
+how ageUSD/sigmaUSD https://sigmausd.io/#/ works
+https://ergoplatform.org/en/blog/2021-02-05-building-ergo-how-the-ageusd-stablecoin-works/
+How to set up and configure a full Ergo node (2019)
+https://ergoplatform.org/en/blog/2019_12_02_how_to_setup/
+
+* resources
+https://ergohack.io/resources/
+https://github.com/ergoplatform/awesome-ergo
+https://github.com/ergoplatform/ergo/wiki
+https://ergonaut.space/en/Developers
+https://ergonaut.space/en/sigma-protocols
+
+* repos
+ergo
+https://github.com/ergoplatform/ergo
+ergoscript code to read
+https://github.com/ergoplatform/ergoscript-by-example
+ergo-appkit
+https://github.com/ergoplatform/ergo-appkit#using-from-java
+ergo-appkit-examples
+https://github.com/aslesarenko/ergo-appkit-examples
+raffle
+https://github.com/NazeriMahdi2001/Raffle-Doc/blob/master/Contracts/ContractTest.scala
+ergo-mixer
+https://github.com/ergoMixer/ergoMixBack
+ergo-hdf
+https://github.com/ergoplatform/ergo-headless-dapp-framework
+erg-sdk-js
+https://github.com/ergolabs/ergo-sdk-js
+sigma-rust
+https://github.com/ergoplatform/sigma-rust
+NFT Auction House:
+https://github.com/anon-real/ErgoAuctionHouse
+SigmaUSD:
+https://github.com/anon-real/sigma-usd
+Ergo Assembler:
+https://github.com/anon-real/ergo-assembler
+
+old repos:
+docker+nix to run ergo node, deprecated
+https://github.com/ergoplatform/ergo-bootstrap
+nix to run ergo, deprecated
+https://github.com/ergoplatform/ergo-nix
